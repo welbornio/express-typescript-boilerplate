@@ -6,6 +6,7 @@
 ```
 npm ^4.6.1
 node ^9.2.0
+nodemon ^1.8.1
 ```
 
 ### Setup
