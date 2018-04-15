@@ -1,0 +1,33 @@
+{
+  "name": "express-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
+    "db-migrate": "node ./node_modules/.bin/db-migrate --config ./database.json",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "db-migrate": "^0.10.2",
+    "db-migrate-mysql": "^1.1.10",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cookie-session": "^2.0.34",
+    "@types/express": "^4.0.39",
+    "@types/helmet": "0.0.37",
+    "@types/mysql": "^2.15.2",
+    "@types/node": "^8.0.58",
+    "ts-node": "^4.0.1",
+    "typescript": "^2.6.2"
+  }
+}
